@@ -1,0 +1,14 @@
+{
+    "name": "sblondeau/faker-fun-names",
+    "description": "Profide French fun names for Faker",
+    "type": "library",
+    "require": {
+        "fzaninotto/faker": "^1.9",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload" : {
+        "psr-4": {
+            "FunDataProvider\\" : "src/"
+        }
+    }
+}
