@@ -13,7 +13,8 @@ class FunDataProviderTest extends TestCase
     {
         $faker = Factory::create();
         $faker->addProvider(new FunDataProvider($faker));
-        $this->assertContains($faker->funName, FunDataProvider::$names);
+        $this->assertContains($faker->funName, FunDataProvider::NAMES);
+        $this->assertContains($faker->contrepetrie, FunDataProvider::CONTREPETRIES);
     }
 
 }
